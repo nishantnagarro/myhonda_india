@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "MyHonda India",
+    "slug": "myhonda-india",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "myhonda",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.honda.india.myhonda"
+    },
+    "android": {
+      "package": "com.honda.india.myhonda",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-localization"
+    ]
+  }
+}

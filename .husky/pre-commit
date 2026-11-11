@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🛡️  Running Pre-Commit Quality Gate..."
+
+# 1. Lint & Format staged files
+npx lint-staged
+
+# 2. Strict Typecheck
+npm run typecheck
+
+# 3. Architecture Boundary Check
+npm run arch:check
+
+# 4. i18n Translation Parity Check
+npm run i18n:check
+
+echo "✔ All Pre-Commit Checks Passed!"

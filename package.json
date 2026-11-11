@@ -1,0 +1,70 @@
+{
+  "name": "myhonda-india",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@shopify/flash-list": "^2.3.3",
+    "@tanstack/react-query": "^5.107.1",
+    "axios": "^1.21.1",
+    "expo": "~58.0.23",
+    "expo-constants": "~58.0.15",
+    "expo-linking": "~58.0.16",
+    "expo-localization": "~58.0.5",
+    "expo-router": "~58.0.30",
+    "expo-secure-store": "~58.0.2",
+    "expo-status-bar": "~58.0.4",
+    "i18next": "^27.1.1",
+    "lucide-react-native": "^1.72.0",
+    "react": "19.3.0",
+    "react-hook-form": "^7.92.0",
+    "react-i18next": "^18.0.1",
+    "react-native": "0.88.1",
+    "react-native-gesture-handler": "~3.3.0",
+    "react-native-mmkv": "^4.3.2",
+    "react-native-nitro-modules": "^0.37.2",
+    "react-native-reanimated": "4.7.1",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-screens": "~4.30.1",
+    "react-native-svg": "15.16.0",
+    "zod": "^4.6.7",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^2.1.1",
+    "@types/react": "~19.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "dependency-cruiser": "^18.7.2",
+    "eslint": "^9.0.0",
+    "eslint-plugin-boundaries": "^7.4.2",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-native": "^5.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.10.0",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "start:clean": "expo start -c",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "arch:check": "depcruise --config .dependency-cruiser.js src",
+    "format": "prettier --write 'src/**/*.{ts,tsx}' 'app/**/*.{ts,tsx}'",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx}' 'app/**/*.{ts,tsx}'",
+    "i18n:check": "node scripts/validate-i18n.mjs",
+    "validate": "npm run typecheck && npm run arch:check && npm run lint && npm run i18n:check",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "private": true
+}

@@ -1,0 +1,38 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "search": "Search models, dealers, parts...",
+    "cancel": "Cancel",
+    "save": "Save",
+    "back": "Back",
+    "viewDetails": "View Details",
+    "bookService": "Book Service",
+    "priceExShowroom": "Ex-Showroom Price"
+  },
+  "nav": {
+    "explore": "Explore",
+    "search": "Search",
+    "service": "Service",
+    "profile": "Profile"
+  },
+  "explore": {
+    "title": "Discover Honda",
+    "subtitle": "Engineering excellence tailored for Indian roads",
+    "featuredModels": "Featured Vehicles",
+    "allModels": "All Lineup",
+    "searchPlaceholder": "Search Honda motorcycles and scooters",
+    "emptySearchResults": "No vehicles found matching your search",
+    "specs": {
+      "engine": "Engine",
+      "power": "Max Power",
+      "mileage": "Mileage"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "No new notifications",
+    "serviceReminder": "Service Reminder"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "कुछ गलत हो गया",
+    "retry": "पुनः प्रयास करें",
+    "search": "मॉडल, डीलर खोजें...",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "back": "वापस",
+    "viewDetails": "विवरण देखें",
+    "bookService": "सर्विस बुक करें",
+    "priceExShowroom": "एक्स-शोरूम कीमत"
+  },
+  "nav": {
+    "explore": "एक्सप्लोर",
+    "search": "खोजें",
+    "service": "सर्विस",
+    "profile": "प्रोफाइल"
+  },
+  "explore": {
+    "title": "होंडा डिस्कवर करें",
+    "subtitle": "भारतीय सड़कों के लिए उत्कृष्ट इंजीनियरिंग",
+    "featuredModels": "प्रमुख वाहन",
+    "allModels": "सभी मॉडल्स",
+    "searchPlaceholder": "होंडा मोटरसाइकिल और स्कूटर खोजें",
+    "emptySearchResults": "आपकी खोज से मेल खाने वाले कोई वाहन नहीं मिले",
+    "specs": {
+      "engine": "इंजन",
+      "power": "अधिकतम पावर",
+      "mileage": "माइलेज"
+    }
+  },
+  "notifications": {
+    "title": "सूचनाएं",
+    "empty": "कोई नई सूचना नहीं",
+    "serviceReminder": "सर्विस रिमाइंडर"
+  }
+}
