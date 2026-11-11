@@ -1,7 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
+
 import { services } from "@/core/services";
-import { getFeaturedVehicles } from "@/features/explore/domain/usecases/GetFeaturedVehiclesUseCase";
 import { Vehicle } from "@/features/explore/domain/entities/Vehicle";
+import { getFeaturedVehicles } from "@/features/explore/domain/usecases/GetFeaturedVehiclesUseCase";
 
 export function useExploreVehicles() {
   return useQuery<Vehicle[], Error>({

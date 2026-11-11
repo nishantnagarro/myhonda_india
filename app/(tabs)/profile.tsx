@@ -1,7 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import { ScreenContainer, AppText } from "@/design-system/primitives";
+
 import { useAppTranslation } from "@/core/i18n/useAppTranslation";
+import { AppText, ScreenContainer } from "@/design-system/primitives";
+
 import { styles } from "./profile.styles";
 
 export default function ProfileRoute() {

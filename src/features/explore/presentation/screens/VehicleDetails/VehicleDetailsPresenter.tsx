@@ -1,9 +1,12 @@
 import React from "react";
-import { View, Image, ScrollView } from "react-native";
-import { ScreenContainer } from "@/design-system/primitives/ScreenContainer";
-import { AppText } from "@/design-system/primitives/AppText";
+import { Image, ScrollView, View } from "react-native";
+
 import { AppButton } from "@/design-system/primitives/AppButton";
+import { AppText } from "@/design-system/primitives/AppText";
+import { ScreenContainer } from "@/design-system/primitives/ScreenContainer";
+
 import { VehicleDetailsPresenterProps } from "./VehicleDetailsPresenter.types";
+
 import { styles } from "./VehicleDetailsPresenter.styles";
 
 /**

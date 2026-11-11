@@ -1,41 +1,90 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# ==============================================================================
+# Enterprise .gitignore for React Native / Expo (MyHonda India)
+# ==============================================================================
 
-# dependencies
+# --- Node & Dependencies ---
 node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.log*
+.pnpm-debug.log*
 
-# Expo
+# --- Environment & Secrets (NEVER COMMIT SECRETS) ---
+.env
+.env.*
+!.env.example
+
+# --- Certificates & Private Keys ---
+*.pem
+*.key
+*.jks
+*.p8
+*.p12
+*.keystore
+*.mobileprovision
+
+# --- Expo & Metro ---
 .expo/
 dist/
 web-build/
 expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
 .metro-health-check*
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-# generated native folders
+# --- Generated Native Folders (Prebuild) ---
 /ios
 /android
+
+# --- Android Build & Local Paths ---
+.gradle/
+build/
+android/app/build/
+android/.gradle/
+local.properties
+*.apk
+*.aab
+*.dex
+
+# --- iOS & CocoaPods ---
+Pods/
+ios/Pods/
+DerivedData/
+*.ipa
+*.xcuserstate
+*.xcuserdatad
+
+# --- Tests & Code Quality Caches ---
+coverage/
+.nyc_output/
+.eslintcache
+.prettiercache
+*.tsbuildinfo
+
+# --- Fastlane & Release Tooling ---
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# --- Operating System Artifacts ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- IDE & Editors ---
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~

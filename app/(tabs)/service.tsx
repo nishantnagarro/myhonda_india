@@ -1,11 +1,13 @@
 import React from "react";
 import { View } from "react-native";
-import {
-  ScreenContainer,
-  AppText,
-  AppButton,
-} from "@/design-system/primitives";
+
 import { useAppTranslation } from "@/core/i18n/useAppTranslation";
+import {
+  AppButton,
+  AppText,
+  ScreenContainer,
+} from "@/design-system/primitives";
+
 import { styles } from "./service.styles";
 
 export default function ServiceRoute() {

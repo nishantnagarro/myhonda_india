@@ -1,4 +1,5 @@
 import { TextProps as RNTextProps } from "react-native";
+
 import { ColorToken } from "@/design-system/tokens/colors";
 import { TypographyVariant } from "@/design-system/tokens/typography";
 

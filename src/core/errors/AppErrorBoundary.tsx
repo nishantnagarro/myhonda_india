@@ -1,14 +1,18 @@
 import React, { Component, ErrorInfo } from "react";
-import { View, SafeAreaView } from "react-native";
+import { SafeAreaView, View } from "react-native";
+
 import { AlertTriangle } from "lucide-react-native";
-import { logger } from "@/core/observability/logger";
+
 import { crashlyticsService } from "@/core/observability/crashlyticsService";
-import { AppText, AppButton } from "@/design-system/primitives";
+import { logger } from "@/core/observability/logger";
+import { AppButton, AppText } from "@/design-system/primitives";
 import { resolveColor } from "@/design-system/tokens/colors";
+
 import {
   AppErrorBoundaryProps,
   AppErrorBoundaryState,
 } from "./AppErrorBoundary.types";
+
 import { styles } from "./AppErrorBoundary.styles";
 
 /**

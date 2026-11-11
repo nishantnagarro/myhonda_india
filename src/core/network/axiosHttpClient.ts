@@ -3,14 +3,16 @@
  * Implements single-flight 401 token refresh and 429 jitter backoff.
  */
 import axios, {
-  AxiosInstance,
   AxiosError,
+  AxiosInstance,
   InternalAxiosRequestConfig,
 } from "axios";
-import { IHttpClient, HttpRequestConfig } from "./httpClient";
-import { AppError } from "./apiError";
-import { ISecureStorage } from "@/core/storage/secureStorage";
+
 import { logger } from "@/core/observability/logger";
+import { ISecureStorage } from "@/core/storage/secureStorage";
+
+import { AppError } from "./apiError";
+import { HttpRequestConfig, IHttpClient } from "./httpClient";
 
 export function createHttpClient(
   baseURL: string,

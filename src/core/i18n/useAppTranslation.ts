@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+
 import en from "./locales/en.json";
 
 // Flatten nested JSON keys into "explore.title" | "common.retry" union
@@ -31,10 +32,9 @@ export function useAppTranslation() {
     key: TranslationKey,
     options?: Record<string, unknown>,
   ): string => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return options
-      ? (translateOriginal as any)(key, options)
-      : (translateOriginal as any)(key);
+    type TranslationFn = (k: string, opts?: Record<string, unknown>) => string;
+    const fn = translateOriginal as unknown as TranslationFn;
+    return options ? fn(key, options) : fn(key);
   };
 
   const changeLanguage = async (lang: "en" | "hi") => {

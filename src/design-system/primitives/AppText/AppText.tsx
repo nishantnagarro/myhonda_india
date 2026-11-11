@@ -1,7 +1,9 @@
 import React from "react";
 import { Text as RNText } from "react-native";
+
 import { resolveColor } from "@/design-system/tokens/colors";
 import { typography } from "@/design-system/tokens/typography";
+
 import { AppTextProps } from "./AppText.types";
 
 /**

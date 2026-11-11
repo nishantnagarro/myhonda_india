@@ -1,8 +1,11 @@
 import React from "react";
-import { TouchableOpacity, ActivityIndicator } from "react-native";
+import { ActivityIndicator, TouchableOpacity } from "react-native";
+
 import { AppText } from "@/design-system/primitives/AppText";
 import { resolveColor } from "@/design-system/tokens/colors";
+
 import { AppButtonProps } from "./AppButton.types";
+
 import { styles } from "./AppButton.styles";
 
 export const AppButton: React.FC<AppButtonProps> = ({

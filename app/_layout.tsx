@@ -1,16 +1,19 @@
+import "@/core/i18n/i18n"; // Initialize i18next
+
 import React, { useEffect } from "react";
+import * as Linking from "expo-linking";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import * as Linking from "expo-linking";
+
+import { AppErrorBoundary } from "@/core/errors";
 import {
   getInitialDeepLink,
   navigateToDeepLink,
 } from "@/core/navigation/deepLinkHandler";
 import { logger } from "@/core/observability/logger";
-import { AppErrorBoundary } from "@/core/errors";
-import "@/core/i18n/i18n"; // Initialize i18next
 
 // Create TanStack Query Client with optimal mobile defaults
 const queryClient = new QueryClient({

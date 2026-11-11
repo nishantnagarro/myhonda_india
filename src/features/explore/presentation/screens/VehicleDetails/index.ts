@@ -1,6 +1,6 @@
 export { VehicleDetailsContainer } from "./VehicleDetailsContainer";
 export { VehicleDetailsPresenter } from "./VehicleDetailsPresenter";
 export type {
-  VehicleDetailsPresenterProps,
   VehicleDetailsContainerProps,
+  VehicleDetailsPresenterProps,
 } from "./VehicleDetailsPresenter.types";

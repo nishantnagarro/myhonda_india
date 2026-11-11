@@ -1,7 +1,8 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Link, Stack } from "expo-router";
-import { ScreenContainer, AppText } from "@/design-system/primitives";
+
+import { AppText, ScreenContainer } from "@/design-system/primitives";
 import { spacing } from "@/design-system/tokens/spacing";
 
 export default function NotFoundScreen() {

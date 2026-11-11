@@ -1,8 +1,11 @@
 import React from "react";
-import { View, TextInput } from "react-native";
+import { TextInput, View } from "react-native";
+
 import { AppText } from "@/design-system/primitives/AppText";
 import { resolveColor } from "@/design-system/tokens/colors";
+
 import { AppInputProps } from "./AppInput.types";
+
 import { styles } from "./AppInput.styles";
 
 export const AppInput: React.FC<AppInputProps> = ({

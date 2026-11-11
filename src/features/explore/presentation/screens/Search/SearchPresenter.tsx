@@ -1,13 +1,16 @@
 import React from "react";
-import { View, ScrollView } from "react-native";
-import {
-  VehicleCard,
-  ScreenResultCard,
-} from "@/features/explore/presentation/components";
-import { ScreenContainer } from "@/design-system/primitives/ScreenContainer";
-import { AppText } from "@/design-system/primitives/AppText";
+import { ScrollView, View } from "react-native";
+
 import { AppInput } from "@/design-system/primitives/AppInput";
+import { AppText } from "@/design-system/primitives/AppText";
+import { ScreenContainer } from "@/design-system/primitives/ScreenContainer";
+import {
+  ScreenResultCard,
+  VehicleCard,
+} from "@/features/explore/presentation/components";
+
 import { SearchPresenterProps } from "./SearchPresenter.types";
+
 import { styles } from "./SearchPresenter.styles";
 
 /**

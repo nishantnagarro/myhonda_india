@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 /**
  * useSafeAsync: Prevents setting state or resolving callbacks after a component has unmounted.

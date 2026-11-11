@@ -1,15 +1,19 @@
 import React from "react";
-import { View, TouchableOpacity, ScrollView } from "react-native";
+import { ScrollView, TouchableOpacity, View } from "react-native";
+
 import { FlashList } from "@shopify/flash-list";
+
+import { AppInput } from "@/design-system/primitives/AppInput";
+import { AppText } from "@/design-system/primitives/AppText";
+import { ScreenContainer } from "@/design-system/primitives/ScreenContainer";
 import { Vehicle } from "@/features/explore/domain/entities/Vehicle";
 import {
   VehicleCard,
   VehicleCardSkeleton,
 } from "@/features/explore/presentation/components";
-import { ScreenContainer } from "@/design-system/primitives/ScreenContainer";
-import { AppText } from "@/design-system/primitives/AppText";
-import { AppInput } from "@/design-system/primitives/AppInput";
+
 import { ExplorePresenterProps } from "./ExplorePresenter.types";
+
 import { styles } from "./ExplorePresenter.styles";
 
 /**

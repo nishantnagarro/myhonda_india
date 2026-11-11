@@ -1,18 +1,22 @@
 import React from "react";
-import { View, TouchableOpacity } from "react-native";
-import { router, type Href } from "expo-router";
+import { TouchableOpacity, View } from "react-native";
+import { type Href, router } from "expo-router";
+
 import {
-  Wrench,
-  User,
+  ChevronRight,
   Compass,
   FileText,
   Shield,
-  ChevronRight,
+  User,
+  Wrench,
 } from "lucide-react-native";
+
+import { useAppTranslation } from "@/core/i18n/useAppTranslation";
 import { AppText } from "@/design-system/primitives/AppText";
 import { resolveColor } from "@/design-system/tokens/colors";
-import { useAppTranslation } from "@/core/i18n/useAppTranslation";
+
 import { ScreenResultCardProps } from "./ScreenResultCard.types";
+
 import { styles } from "./ScreenResultCard.styles";
 
 /**

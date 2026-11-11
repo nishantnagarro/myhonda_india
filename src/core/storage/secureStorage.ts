@@ -3,6 +3,7 @@
  * Used exclusively for sensitive credentials: JWT access token, refresh token.
  */
 import * as SecureStore from "expo-secure-store";
+
 import { logger } from "@/core/observability/logger";
 
 export interface ISecureStorage {

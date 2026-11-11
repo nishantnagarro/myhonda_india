@@ -1,9 +1,12 @@
 import React from "react";
-import { View, Image, TouchableOpacity } from "react-native";
-import { router, type Href } from "expo-router";
-import { AppText } from "@/design-system/primitives/AppText";
+import { Image, TouchableOpacity, View } from "react-native";
+import { type Href, router } from "expo-router";
+
 import { useAppTranslation } from "@/core/i18n/useAppTranslation";
+import { AppText } from "@/design-system/primitives/AppText";
+
 import { VehicleCardProps } from "./VehicleCard.types";
+
 import { styles } from "./VehicleCard.styles";
 
 /**

@@ -1,9 +1,11 @@
 import React from "react";
-import { router, type Href } from "expo-router";
-import { useExploreVehicles } from "@/features/explore/presentation/hooks/useExploreVehicles";
+import { type Href, router } from "expo-router";
+
 import { useAppTranslation } from "@/core/i18n/useAppTranslation";
-import { ExplorePresenter } from "./ExplorePresenter";
 import { Vehicle } from "@/features/explore/domain/entities/Vehicle";
+import { useExploreVehicles } from "@/features/explore/presentation/hooks/useExploreVehicles";
+
+import { ExplorePresenter } from "./ExplorePresenter";
 
 /**
  * Smart Container for Explore Feature

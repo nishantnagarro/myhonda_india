@@ -1,4 +1,5 @@
 import { ViewStyle } from "react-native";
+
 import { Edge } from "react-native-safe-area-context";
 
 export interface ScreenContainerProps {

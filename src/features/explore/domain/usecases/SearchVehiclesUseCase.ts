@@ -1,5 +1,5 @@
-import { IExploreRepository } from "../repositories/IExploreRepository";
 import { Vehicle } from "../entities/Vehicle";
+import { IExploreRepository } from "../repositories/IExploreRepository";
 
 /**
  * Pure Functional UseCase: Searches vehicles by query

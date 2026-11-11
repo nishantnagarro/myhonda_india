@@ -3,3 +3,4 @@ export * from "./AppInput";
 export * from "./AppText";
 export * from "./ScreenContainer";
 export * from "./Skeleton";
+export * from "./Skeleton";

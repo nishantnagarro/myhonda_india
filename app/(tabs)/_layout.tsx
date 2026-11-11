@@ -1,8 +1,10 @@
 import React from "react";
 import { Tabs } from "expo-router";
-import { Compass, Search, Wrench, User } from "lucide-react-native";
-import { resolveColor } from "@/design-system/tokens/colors";
+
+import { Compass, Search, User, Wrench } from "lucide-react-native";
+
 import { useAppTranslation } from "@/core/i18n/useAppTranslation";
+import { resolveColor } from "@/design-system/tokens/colors";
 
 export default function TabLayout() {
   const { t } = useAppTranslation();

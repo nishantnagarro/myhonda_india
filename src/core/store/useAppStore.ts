@@ -6,7 +6,8 @@
  * Server data (vehicles, bookings) must stay in TanStack Query (no duplicate state).
  */
 import { create } from "zustand";
-import { persist, createJSONStorage } from "zustand/middleware";
+import { createJSONStorage, persist } from "zustand/middleware";
+
 import { localStorage } from "@/core/storage/localStorage";
 
 // Fast Synchronous MMKV Storage Engine for Zustand

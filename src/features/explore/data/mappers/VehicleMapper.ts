@@ -1,5 +1,5 @@
-import { VehicleDTO } from "../dto/VehicleDTO";
 import { Vehicle } from "../../domain/entities/Vehicle";
+import { VehicleDTO } from "../dto/VehicleDTO";
 
 /**
  * Pure Functional Vehicle Mapper

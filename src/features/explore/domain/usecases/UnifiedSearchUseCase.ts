@@ -1,5 +1,5 @@
-import { IExploreRepository } from "../repositories/IExploreRepository";
 import { ScreenResult, UnifiedSearchResults } from "../entities/SearchResult";
+import { IExploreRepository } from "../repositories/IExploreRepository";
 
 /**
  * Pure Functional UseCase: Unified Search (Screens + Vehicles)

@@ -1,13 +1,14 @@
-import { IExploreRepository } from "@/features/explore/domain/repositories/IExploreRepository";
-import { Vehicle } from "@/features/explore/domain/entities/Vehicle";
 import { IHttpClient } from "@/core/network/httpClient";
+import { logger } from "@/core/observability/logger";
+import { Vehicle } from "@/features/explore/domain/entities/Vehicle";
+import { IExploreRepository } from "@/features/explore/domain/repositories/IExploreRepository";
+
 import {
   VehicleDTO,
-  VehicleListDTOSchema,
   VehicleDTOSchema,
+  VehicleListDTOSchema,
 } from "../dto/VehicleDTO";
 import { toVehicleDomain, toVehicleDomainList } from "../mappers/VehicleMapper";
-import { logger } from "@/core/observability/logger";
 
 // Mock datasets for offline / local prototype before AWS Gateway is connected
 const MOCK_VEHICLES_DTO: VehicleDTO[] = [

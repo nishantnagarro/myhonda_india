@@ -1,4 +1,4 @@
-import { ReactNode, ErrorInfo } from "react";
+import { ErrorInfo, ReactNode } from "react";
 
 export interface AppErrorBoundaryProps {
   children: ReactNode;

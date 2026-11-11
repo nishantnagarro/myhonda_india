@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * Pure Functional Zero-PII Logger
  * Automatically redacts phone numbers, tokens, OTPs, and VIN/chassis numbers.

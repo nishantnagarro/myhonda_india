@@ -1,6 +1,8 @@
 import React from "react";
 import { View } from "react-native";
+
 import { Skeleton } from "@/design-system/primitives/Skeleton";
+
 import { styles } from "./VehicleCardSkeleton.styles";
 
 /**

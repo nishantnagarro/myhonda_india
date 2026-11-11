@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * Pure Functional Crashlytics Service Abstraction
  */

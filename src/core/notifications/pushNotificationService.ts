@@ -1,7 +1,8 @@
 /**
  * Pure Functional Push Notification Service
  */
-import { router, type Href } from "expo-router";
+import { type Href, router } from "expo-router";
+
 import { logger } from "@/core/observability/logger";
 
 export interface NotificationPayload {

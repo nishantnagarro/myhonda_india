@@ -1,9 +1,11 @@
-import { useState, useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+
 import { useQuery } from "@tanstack/react-query";
-import { services } from "@/core/services";
-import { searchVehicles } from "@/features/explore/domain/usecases/SearchVehiclesUseCase";
+
 import { searchAppScreens } from "@/core/navigation/searchableScreens";
+import { services } from "@/core/services";
 import { Vehicle } from "@/features/explore/domain/entities/Vehicle";
+import { searchVehicles } from "@/features/explore/domain/usecases/SearchVehiclesUseCase";
 
 export function useVehicleSearch(initialQuery = "") {
   const [query, setQuery] = useState(initialQuery);

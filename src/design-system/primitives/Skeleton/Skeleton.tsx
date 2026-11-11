@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { Animated } from "react-native";
+
 import { SkeletonProps } from "./Skeleton.types";
+
 import { styles } from "./Skeleton.styles";
 
 /**

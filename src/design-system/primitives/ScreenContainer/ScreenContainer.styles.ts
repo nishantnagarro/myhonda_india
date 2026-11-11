@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+
 import { resolveColor } from "@/design-system/tokens/colors";
 import { spacing } from "@/design-system/tokens/spacing";
 

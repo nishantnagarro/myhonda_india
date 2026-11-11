@@ -5,7 +5,8 @@
  * to type-safe Expo Router destinations.
  */
 import * as Linking from "expo-linking";
-import { router, type Href } from "expo-router";
+import { type Href, router } from "expo-router";
+
 import { logger } from "@/core/observability/logger";
 
 export interface ParsedDeepLink {

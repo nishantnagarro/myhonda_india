@@ -1,17 +1,21 @@
 import React from "react";
 import {
-  View,
   ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
+  View,
 } from "react-native";
+
 import { SafeAreaView } from "react-native-safe-area-context";
-import { AppText } from "@/design-system/primitives/AppText";
+
 import { AppButton } from "@/design-system/primitives/AppButton";
+import { AppText } from "@/design-system/primitives/AppText";
 import { resolveColor } from "@/design-system/tokens/colors";
 import { useResponsive } from "@/design-system/tokens/responsive";
+
 import { ScreenContainerProps } from "./ScreenContainer.types";
+
 import { styles } from "./ScreenContainer.styles";
 
 /**

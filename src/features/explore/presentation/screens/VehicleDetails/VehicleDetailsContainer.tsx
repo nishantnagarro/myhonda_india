@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { services } from "@/core/services";
+
 import { useAppTranslation } from "@/core/i18n/useAppTranslation";
+import { services } from "@/core/services";
 import { Vehicle } from "@/features/explore/domain/entities/Vehicle";
+
 import { VehicleDetailsPresenter } from "./VehicleDetailsPresenter";
 import { VehicleDetailsContainerProps } from "./VehicleDetailsPresenter.types";
 

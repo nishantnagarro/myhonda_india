@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import { useLocalSearchParams, router, type Href } from "expo-router";
-import { useVehicleSearch } from "@/features/explore/presentation/hooks/useVehicleSearch";
+import { type Href, router, useLocalSearchParams } from "expo-router";
+
 import { useAppTranslation } from "@/core/i18n/useAppTranslation";
 import { useAppStore } from "@/core/store/useAppStore";
-import { SearchPresenter } from "./SearchPresenter";
-import { Vehicle } from "@/features/explore/domain/entities/Vehicle";
 import { ScreenResult } from "@/features/explore/domain/entities/SearchResult";
+import { Vehicle } from "@/features/explore/domain/entities/Vehicle";
+import { useVehicleSearch } from "@/features/explore/presentation/hooks/useVehicleSearch";
+
+import { SearchPresenter } from "./SearchPresenter";
 
 /**
  * Smart Container for Search Feature
