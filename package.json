@@ -59,6 +59,8 @@
     "format": "prettier --write 'src/**/*.{ts,tsx}' 'app/**/*.{ts,tsx}'",
     "format:check": "prettier --check 'src/**/*.{ts,tsx}' 'app/**/*.{ts,tsx}'",
     "i18n:check": "node scripts/validate-i18n.mjs",
+    "clean": "node scripts/clean.mjs",
+    "clean:full": "node scripts/clean.mjs --full",
     "validate": "npm run typecheck && npm run arch:check && npm run lint && npm run i18n:check",
     "prepare": "husky"
   },
