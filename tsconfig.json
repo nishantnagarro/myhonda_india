@@ -11,6 +11,7 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@/*": ["./src/*"],
+      "@assets/*": ["./assets/*"],
       "@core/*": ["./src/core/*"],
       "@design-system/*": ["./src/design-system/*"],
       "@features/*": ["./src/features/*"]

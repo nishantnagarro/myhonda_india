@@ -5,14 +5,26 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "scheme": "myhonda",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash-screen-light.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF",
+      "dark": {
+        "image": "./assets/images/splash-screen-dark.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#000000"
+      }
+    },
     "experiments": {
       "typedRoutes": true
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.honda.india.myhonda"
+      "bundleIdentifier": "com.honda.india.myhonda",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Honda services aur nearby dealerships dikhane ke liye location permission zaroori hai."
+      }
     },
     "android": {
       "package": "com.honda.india.myhonda",
@@ -20,12 +32,43 @@
         "backgroundColor": "#FFFFFF",
         "foregroundImage": "./assets/android-icon-foreground.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "POST_NOTIFICATIONS"
+      ]
     },
     "plugins": [
       "expo-router",
       "expo-secure-store",
-      "expo-localization"
+      "expo-localization",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-screen-light.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF",
+          "dark": {
+            "image": "./assets/images/splash-screen-dark.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Honda services aur nearby dealerships dikhane ke liye location permission zaroori hai."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#FFFFFF"
+        }
+      ]
     ]
   }
 }

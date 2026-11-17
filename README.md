@@ -17,6 +17,7 @@
 10. [Observability, Security & Firebase Readiness](#10-observability-security--firebase-readiness)
 11. [Quality Gates & CI/CD Verification](#11-quality-gates--cicd-verification)
 12. [Developer Guide: How to Add a New Feature](#12-developer-guide-how-to-add-a-new-feature)
+13. [Engineering Guardrails & Rules (GUIDELINES.md)](./GUIDELINES.md)
 
 ---
 
